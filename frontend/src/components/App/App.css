@@ -1,0 +1,138 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 4px 2px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: rgba(207, 207, 207, 0.185);
+  color: white;
+}
+
+.button1:disabled {
+  background-color: grey;
+  opacity: 50%;
+  color: white;
+}
+
+.button2 {
+  background-color: rgba(60, 4, 156, 0.75);
+  color: white;
+}
+
+.button2:hover {
+  background-color: #5f13ac;
+  color: white;
+}
+
+.button2:disabled {
+  background-color: grey;
+  opacity: 50%;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center-image {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+}
+
+.center-image img {
+  max-width: 35%;
+  max-height: 35%;
+}
+
+.popup-image {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+}
+
+.popup-image img {
+  max-width: 65%;
+  max-height: 100%;
+}
+
+.modal {
+  font-size: 15px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 100px;
+  border: 1px solid #cfcece;
+}
